@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de inscripción Club Deportivo</title>
+</head>
+<body>
+
+    <header>
+        <h2 style="text-align: center;">Giovanni Luis Rodríguez</h2>
+    </header>
+
+    <div style="text-align: center;">
+        <img src="imágenes/LogoGymASIR.png" alt="Logo ASIR GYM" width="150">
+    </div>
+
+    <h3>Formulario de inscripción Club Deportivo</h3>
+
+    <form action="" method="post">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <label for="dni">DNI:</label>
+            <input type="text" name="giovannidni" maxlength="9" pattern="[0-9]{8}[A-Za-z]" required><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="giovanninombre" maxlength="20" required><br>
+
+            <label for="apellido1">Primer Apellido:</label>
+            <input type="text" name="giovanniapellido1" maxlength="20" required><br>
+
+            <label for="apellido2">Segundo Apellido:</label>
+            <input type="text" name="giovanniapellido2" maxlength="20"><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="giovannidireccion" maxlength="80"><br>
+
+            <label for="cp">Código Postal:</label>
+            <input type="text" name="giovannicp" maxlength="5"><br>
+
+            <label for="poblacion">Población:</label>
+            <input type="text" name="giovannipoblacion" maxlength="64"><br>
+
+            <label for="provincia">Provincia:</label>
+            <select name="giovanniprovincia">
+                <option value="Santa Cruz de Tenerife" selected>Santa Cruz de Tenerife</option>
+                <option value="Las Palmas">Las Palmas</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Valencia">Valencia</option>
+            </select><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="giovannitelefono" maxlength="9"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="giovanniemail" maxlength="64"><br>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="giovanniusuario" maxlength="9"><br>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="giovannipassword" maxlength="9"><br>
+
+            <label for="fecha_nac">Fecha de nacimiento:</label>
+            <input type="date" name="giovannifecha_nac"><br>
+
+            <label for="sexo">Sexo:</label>
+            <select name="giovannisexo">
+                <option value="MUJER">Mujer</option>
+                <option value="HOMBRE">Hombre</option>
+                <option value="OTRO">Otro</option>
+            </select><br>
+
+            <label for="archivo">Foto o DNI escaneado (PDF/JPG):</label>
+            <input type="file" name="giovanniarchivo" accept=".pdf, .jpg, .jpeg, application/pdf, image/jpeg">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Deportes y Experiencia</legend>
+            
+            <label for="deporte">Deporte favorito:</label>
+            <select name="giovannideporte">
+                <option value="FÚTBOL">Fútbol</option>
+                <option value="TENIS">Tenis</option>
+                <option value="NATACIÓN">Natación</option>
+                <option value="CICLISMO">Ciclismo</option>
+            </select><br>
+
+            <label>Experiencia previa en clubes:</label>
+            <input type="radio" name="giovanniexperiencia" value="si">
+            <label for="exp_si">Sí</label>
+            <input type="radio" name="giovanniexperiencia" value="no">
+            <label for="exp_no">No</label><br>
+
+            <label for="club_anterior">Nombre del club anterior:</label>
+            <input type="text" name="giovanniclub_anterior" maxlength="32"><br>
+
+            <label for="categoria">Categoría solicitada:</label>
+            <select name="giovannicategoria">
+                <option value="INFANTIL">Infantil</option>
+                <option value="JUVENIL">Juvenil</option>
+                <option value="SENIOR">Senior</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Idiomas y otros datos</legend>
+            
+            <label for="idiomas">Idiomas:</label>
+            <select name="giovanniidiomas" multiple size="4">
+                <option value="ESPAÑOL">Español</option>
+                <option value="INGLÉS">Inglés</option>
+                <option value="FRANCÉS">Francés</option>
+                <option value="OTROS">Otros</option>
+            </select><br><br>
+
+            <label for="otros_idiomas">Si marcó 'Otros', especifique:</label>
+            <textarea name="giovanniotros_idiomas" rows="2" cols="25"></textarea><br><br>
+
+            <label for="otros_datos">Otros datos relevantes:</label>
+            <textarea name="giovanniotros_datos" rows="2" cols="25"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar solicitud">
+        <input type="reset" value="Limpiar formulario">
+
+    </form>
+
+</body>
+</html>
